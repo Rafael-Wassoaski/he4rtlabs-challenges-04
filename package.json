@@ -1,0 +1,31 @@
+{
+  "name": "he4rtlabs-challenges-04",
+  "version": "1.0.0",
+  "description": "Pokedéx boladona pra você pegar todos os pokemões do planeta (que você cadastrar)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js",
+    "build": "cd front-end && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafael-Wassoaski/he4rtlabs-challenges-04.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rafael-Wassoaski/he4rtlabs-challenges-04/issues"
+  },
+  "homepage": "https://github.com/Rafael-Wassoaski/he4rtlabs-challenges-04#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "engines": {
+    "node": "14.17.5"
+  }
+}
