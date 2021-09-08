@@ -17,7 +17,7 @@ function App() {
     return (
         <div className="App">
             <header>
-                <p>{!data ? 'Carregando' : data.name}</p>
+                <h1>{!data ? 'Carregando' : data.name}</h1>
             </header>
             <Field/>
             
