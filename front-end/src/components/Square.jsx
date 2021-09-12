@@ -1,14 +1,17 @@
-import React, {Fragment, useState} from 'react';
+import React, {useState} from 'react';
 import StyledSquare from '../styled-components/Square';
 import StyledSquareImage from '../styled-components/SquareImage'
-import grass from '../public/grass.png'
-import {Drawer, List, ListItem, Divider,} from "material-ui";
 
-const Square = () => {
-    const [field, setField] = useState(grass);
+const Square = ({initialSprite, pokeSprite}) => {
+    const [field, setField] = useState(initialSprite);
+
+    function capturePokemon() {
+        setField(pokeSprite);
+    }
+
     return (
         <StyledSquare>
-            <StyledSquareImage src={field}/>
+            <StyledSquareImage src={field} onClick={capturePokemon.bind(this)}/>
         </StyledSquare>
     )
 }

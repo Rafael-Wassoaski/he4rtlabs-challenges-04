@@ -1,26 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import React, {useState, useEffect} from "react";
+import React from "react";
 import Field from "./components/Field";
 
 function App() {
-    const [data, setData] = useState(null);
-    useEffect(() => {
-        fetch('/api/pokemon')
-            .then(res => res.json())
-            .then(res => setData(res.data))
-            .catch((error) => {
-                console.log(error)
-            })
-    }, [])
-
     return (
         <div className="App">
-            <header>
-                <h1>{!data ? 'Carregando' : data.name}</h1>
-            </header>
             <Field/>
-            
         </div>
     );
 }
