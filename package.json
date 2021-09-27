@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/index.js",
+    "start": "nodemon ./src/index.js  --trace-warnings",
     "build": "cd front-end && npm install && npm run build"
   },
   "repository": {
@@ -21,7 +21,8 @@
   "homepage": "https://github.com/Rafael-Wassoaski/he4rtlabs-challenges-04#readme",
   "dependencies": {
     "axios": "^0.21.4",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react-loading": "^2.0.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
