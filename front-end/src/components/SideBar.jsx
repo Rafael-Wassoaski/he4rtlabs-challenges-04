@@ -1,25 +1,28 @@
 import React from "react";
-import {AppBar} from 'material-ui';
-import CssBaseline from '@mui/material/CssBaseline';
-import {Drawer} from "material-ui";
+import {Link} from "react-router-dom";
 
 
 const SideBar = ()=>{
 
     return(
-        <Box sx={{display: 'flex'}}>
-
-            <CssBaseline/>
-            <AppBar
-            position='fixed'
-            sx={{width:`calc(100% - ${240}px)`}}
-            >
-
-            </AppBar>
-
-
-        </Box>
+        <div
+            style={{
+                padding: "10px",
+                width: "15%",
+                background: "#f0f0f0"
+            }}
+        >
+            <ul style={{listStyleType: "none", padding: 0}}>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="user">Profile</Link>
+                </li>
+            </ul>
+        </div>
     )
+
 }
 
 export default SideBar;
