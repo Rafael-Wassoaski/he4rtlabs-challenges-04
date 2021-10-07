@@ -3,6 +3,10 @@ const app = express();
 const port = process.env.PORT || 3001;
 const api = require('./api/api');
 const path = require("path");
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.resolve(__dirname, '../front-end/build')));
 api(app);

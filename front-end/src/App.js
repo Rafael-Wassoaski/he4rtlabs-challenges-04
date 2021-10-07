@@ -14,16 +14,19 @@ function App() {
             <div style={{display: "flex"}}>
 
                 <SideBar/>
+                <div  style={{width: "95%",}}>
 
                 <Switch>
                     <Route path={'/'} exact={true}>
                         <Field/>
                     </Route>
 
-                    <Route path={'/user'} exact={true}>
+                    <Route path={'/user'} >
                         <Profile/>
                     </Route>
                 </Switch>
+                </div>
+
             </div>
         </Router>
     );

@@ -8,8 +8,11 @@ const SideBar = ()=>{
         <div
             style={{
                 padding: "10px",
-                width: "15%",
-                background: "#f0f0f0"
+                background: "#f0f0f0",
+                width: "5%",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center"
             }}
         >
             <ul style={{listStyleType: "none", padding: 0}}>
