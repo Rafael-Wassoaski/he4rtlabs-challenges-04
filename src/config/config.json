@@ -1,14 +1,14 @@
 {
   "development": {
-    "storage": "src/resources/db/dataBase.db",
+    "storage": "C:\\Users\\meire\\Documents\\GitHub\\he4rtlabs-challenges-04\\src\\resources\\db\\dataBase.db",
     "dialect": "sqlite"
   },
   "test": {
-    "storage": "src/resources/db/dataBase.db",
+    "storage": "C:\\Users\\meire\\Documents\\GitHub\\he4rtlabs-challenges-04\\src\\resources\\db\\dataBase.db",
     "dialect": "sqlite"
   },
   "production": {
-    "storage": "src/resources/db/dataBase.db",
+    "storage": "C:\\Users\\meire\\Documents\\GitHub\\he4rtlabs-challenges-04\\src\\resources\\db\\dataBase.db",
     "dialect": "sqlite"
   }
 }

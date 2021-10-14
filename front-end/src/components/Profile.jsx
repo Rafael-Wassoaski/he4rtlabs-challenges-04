@@ -4,6 +4,9 @@ import {Typography, Box, Grid, Button, Input} from "@material-ui/core";
 const Profile = () => {
 
     const [pokemons, setPokemons] = useState([]);
+    function cadastrar(data){
+        console.log(data)
+    }
 
     useEffect(() => {
     })
@@ -60,7 +63,7 @@ const Profile = () => {
                 </Box>
             </Grid>
             <Grid>
-                <form style={{direction: "row"}} method={"POST"} action={"http://localhost:3001/api/user/signin"}>
+                <form onSubmit={cadastrar} style={{direction: "row"}} method={"POST"} action={"http://localhost:3001/api/user/signin"}>
                     <Input fullWidth={true} type={'text'} color={'primary'} name={'userName'} placeholder={'Nome de usuário'}/>
                     <Input fullWidth={true} type={'email'} color={'primary'} name={'email'} placeholder={'Email'}/>
                     <Input fullWidth={true} type={'password'} color={'primary'} name={'password'} placeholder={'Senha'}/>
